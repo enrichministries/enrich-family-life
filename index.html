@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrich Family Life | Counselling Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif'],
+                        serif: ['Lora', 'serif'],
+                    },
+                    colors: {
+                        palette: {
+                            olive: '#606C38',   // Muted Olive Green
+                            forest: '#283618',  // Dark Forest Green
+                            cream: '#FEFAE0',   // Light Cream
+                            ochre: '#DDA15E',   // Warm Tan/Ochre
+                            rust: '#BC6C25',    // Burnt Orange/Rust
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #FEFAE0; }
+    </style>
+</head>
+<body class="text-gray-800 antialiased font-sans flex flex-col min-h-screen bg-palette-cream">
+
+    <nav class="fixed w-full bg-palette-cream/95 backdrop-blur-md border-b border-palette-ochre/30 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20 flex-row-reverse">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <div class="text-right hidden sm:block">
+                        <span class="font-serif font-bold text-xl text-palette-forest tracking-wider block leading-none">ENRICH</span>
+                        <span class="font-serif text-sm text-palette-forest/80 italic block">Family Life</span>
+                    </div>
+                    <!-- Uploaded Image Logo -->
+                    <div class="w-14 h-14 rounded-full overflow-hidden shadow-sm flex items-center justify-center bg-palette-cream flex-shrink-0 border-2 border-palette-forest/20">
+                        <img src="image_dc7822.png" alt="Enrich Family Life Logo" class="w-full h-full object-cover transform scale-110" onerror="this.onerror=null; this.src='https://placehold.co/100x100/283618/FEFAE0?text=Logo';">
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#approach" class="text-palette-forest hover:text-palette-rust font-semibold transition">Approach</a>
+                    <a href="#services" class="text-palette-forest hover:text-palette-rust font-semibold transition">Services & Fees</a>
+                    <a href="#details" class="text-palette-forest hover:text-palette-rust font-semibold transition">Details</a>
+                    <a href="#contact" class="border-2 border-palette-forest text-palette-forest px-6 py-2 rounded-lg hover:bg-palette-forest hover:text-palette-cream transition font-bold flex items-center gap-2">
+                        <i class="ph ph-phone text-lg"></i> Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-palette-cream">
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <div class="absolute -top-24 -right-24 w-[30rem] h-[30rem] rounded-full bg-palette-ochre opacity-15 blur-3xl"></div>
+            <div class="absolute top-48 -left-24 w-96 h-96 rounded-full bg-palette-olive opacity-15 blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Hero Text -->
+                <div class="text-center lg:text-left">
+                    <span class="text-palette-rust font-bold tracking-widest uppercase text-sm mb-4 flex items-center justify-center lg:justify-start gap-2">
+                        <i class="ph-fill ph-sparkle"></i> Welcome To
+                    </span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif text-palette-forest mb-6 leading-tight font-semibold">
+                        A safe space for healing, hope, and positive change.
+                    </h1>
+                    <p class="mt-4 text-lg md:text-xl text-gray-700 max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed font-medium">
+                        We are glad you have reached out for support. Begin your journey toward better understanding yourself, your relationships, and the challenges you face in a respectful, non-judgemental environment.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                        <a href="#services" class="bg-palette-forest text-palette-cream px-8 py-3.5 rounded-lg hover:bg-palette-olive transition text-lg font-bold shadow-md flex items-center justify-center gap-2">
+                            View Services <i class="ph ph-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="border-2 border-palette-forest text-palette-forest px-8 py-3.5 rounded-lg hover:bg-palette-forest hover:text-palette-cream transition text-lg font-bold bg-white/50 backdrop-blur-sm">Contact Us</a>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="relative hidden sm:block">
+                    <div class="absolute -inset-4 bg-palette-ochre/20 rounded-[2.5rem] transform rotate-3 scale-105"></div>
+                    <img src="https://images.unsplash.com/photo-1604881991720-f91add269bed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Warm, inviting seating area representing a safe space" 
+                         class="relative rounded-3xl shadow-xl border-4 border-white object-cover w-full h-[500px] object-center z-10"
+                         onerror="this.onerror=null; this.src='https://placehold.co/800x1000/283618/FEFAE0?text=Safe+Space';">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section id="approach" class="py-20 bg-white relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Approach Image -->
+                <div class="order-2 lg:order-1 relative hidden sm:block">
+                    <div class="absolute -inset-4 bg-palette-olive/10 rounded-full blur-2xl"></div>
+                    <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Happy family with mother, father, and children sharing a warm moment" 
+                         class="relative rounded-2xl shadow-lg w-full h-[450px] object-cover"
+                         onerror="this.onerror=null; this.src='https://placehold.co/800x800/606C38/FEFAE0?text=Family';">
+                </div>
+
+                <!-- Approach Text -->
+                <div class="order-1 lg:order-2 text-left">
+                    <h2 class="text-3xl md:text-4xl font-serif text-palette-forest mb-8 font-semibold flex items-center gap-3">
+                        <i class="ph ph-plant text-palette-olive text-4xl"></i> Our Approach
+                    </h2>
+                    <div class="bg-palette-cream p-8 rounded-2xl shadow-sm border border-palette-ochre/30">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Counselling at <strong class="text-palette-forest font-bold">Enrich Family Life</strong> is designed to help you better understand yourself, your thoughts, emotions, relationships, and the challenges you are facing. 
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Through this collaborative process, we work together to explore difficult feelings, identify patterns, and support you in finding your own insights and course of action.
+                        </p>
+                        <div class="bg-palette-ochre/10 p-6 rounded-xl border-l-4 border-palette-rust mt-8">
+                            <div class="flex items-start gap-4">
+                                <i class="ph ph-hands-praying text-palette-rust text-3xl mt-1 flex-shrink-0"></i>
+                                <p class="text-palette-forest font-semibold">
+                                    If you are comfortable, prayer and faith-based reflection may also be included in the counselling process. We tailor the experience to your personal comfort and beliefs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-palette-cream">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-palette-forest mb-4 font-semibold">Services & Fee Structure</h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-6">We offer a variety of session types to meet your specific needs. Please note our introductory package below.</p>
+                <div class="inline-flex items-center justify-center gap-2 bg-palette-olive/10 text-palette-forest px-5 py-2.5 rounded-full font-semibold text-sm md:text-base border border-palette-olive/20 shadow-sm">
+                    <i class="ph ph-clock text-xl"></i>
+                    Each session duration is 60 to 75 minutes
+                </div>
+            </div>
+
+            <!-- Pricing Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                
+                <!-- Individual -->
+                <div class="bg-white rounded-2xl p-8 border border-palette-ochre/30 hover:shadow-lg hover:border-palette-rust transition duration-300 relative overflow-hidden group">
+                    <i class="ph ph-user text-5xl text-palette-olive mb-4 block group-hover:scale-110 transition-transform origin-left"></i>
+                    <h3 class="text-xl font-serif text-palette-forest font-semibold mb-2">Individual Session</h3>
+                    <p class="text-gray-600 mb-6 text-sm">Personalized one-on-one support.</p>
+                    <div class="flex items-baseline gap-1 mt-auto">
+                        <span class="text-3xl font-bold text-palette-forest">₹1,500</span>
+                        <span class="text-gray-600 font-medium">/ session</span>
+                    </div>
+                </div>
+
+                <!-- Couple -->
+                <div class="bg-white rounded-2xl p-8 border border-palette-ochre/30 hover:shadow-lg hover:border-palette-rust transition duration-300 relative overflow-hidden group">
+                    <i class="ph ph-users text-5xl text-palette-olive mb-4 block group-hover:scale-110 transition-transform origin-left"></i>
+                    <h3 class="text-xl font-serif text-palette-forest font-semibold mb-2">Couple Session</h3>
+                    <p class="text-gray-600 mb-6 text-sm">Navigate relationship dynamics together.</p>
+                    <div class="flex items-baseline gap-1 mt-auto">
+                        <span class="text-3xl font-bold text-palette-forest">₹2,000</span>
+                        <span class="text-gray-600 font-medium">/ session</span>
+                    </div>
+                </div>
+
+                <!-- Parenting -->
+                <div class="bg-white rounded-2xl p-8 border border-palette-ochre/30 hover:shadow-lg hover:border-palette-rust transition duration-300 relative overflow-hidden group">
+                    <i class="ph ph-baby text-5xl text-palette-olive mb-4 block group-hover:scale-110 transition-transform origin-left"></i>
+                    <h3 class="text-xl font-serif text-palette-forest font-semibold mb-2">Parenting Session</h3>
+                    <p class="text-gray-600 mb-6 text-sm">Guidance for raising resilient children.</p>
+                    <div class="flex items-baseline gap-1 mt-auto">
+                        <span class="text-3xl font-bold text-palette-forest">₹2,000</span>
+                        <span class="text-gray-600 font-medium">/ session</span>
+                    </div>
+                </div>
+
+                <!-- Family -->
+                <div class="bg-white rounded-2xl p-8 border border-palette-ochre/30 hover:shadow-lg hover:border-palette-rust transition duration-300 relative overflow-hidden group lg:col-start-1 lg:col-end-3">
+                    <i class="ph ph-house-line text-5xl text-palette-olive mb-4 block group-hover:scale-110 transition-transform origin-left"></i>
+                    <h3 class="text-xl font-serif text-palette-forest font-semibold mb-2">Family Session</h3>
+                    <p class="text-gray-600 mb-6 text-sm max-w-md">Foster healthier family communication and resolve systemic conflicts together in a guided space.</p>
+                    <div class="flex items-baseline gap-1 mt-auto">
+                        <span class="text-3xl font-bold text-palette-forest">₹3,000</span>
+                        <span class="text-gray-600 font-medium">/ session</span>
+                    </div>
+                </div>
+
+                <!-- Premarital -->
+                <div class="bg-white rounded-2xl p-8 border border-palette-ochre/30 hover:shadow-lg hover:border-palette-rust transition duration-300 relative overflow-hidden group">
+                    <i class="ph ph-heart text-5xl text-palette-olive mb-4 block group-hover:scale-110 transition-transform origin-left"></i>
+                    <h3 class="text-xl font-serif text-palette-forest font-semibold mb-2">Premarital Counselling</h3>
+                    <p class="text-gray-600 mb-6 text-sm">Build a strong foundation for marriage.</p>
+                    <div class="flex items-baseline gap-1 mt-auto">
+                        <span class="text-3xl font-bold text-palette-forest">₹1,500</span>
+                        <span class="text-gray-600 font-medium">/ session</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Important Package Note -->
+            <div class="bg-palette-forest text-palette-cream rounded-2xl p-6 shadow-md flex flex-col md:flex-row items-center justify-between gap-6 border-l-4 border-palette-rust">
+                <div class="flex items-center gap-4">
+                    <div class="bg-palette-olive/40 p-3 rounded-full border border-palette-olive/50">
+                        <i class="ph ph-info text-2xl text-palette-cream"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg text-white">Introductory Package</h4>
+                        <p class="text-palette-cream/90 text-sm md:text-base font-medium">To ensure meaningful progress, the first 3 sessions are offered as a package. Payment is required in advance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Section -->
+            <div class="mt-12 bg-white rounded-2xl shadow-sm border border-palette-ochre/30 overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <!-- Left Side: Details -->
+                    <div class="p-8 md:p-10 flex flex-col justify-center bg-palette-cream/30">
+                        <h3 class="text-2xl font-serif text-palette-forest font-semibold mb-4 flex items-center gap-3">
+                            <i class="ph ph-wallet text-palette-olive text-3xl"></i> Payment Details
+                        </h3>
+                        <p class="text-gray-700 mb-6 text-lg">You can easily complete your advance payment for sessions using Google Pay, PhonePe, Paytm, or any other UPI application.</p>
+                        
+                        <div class="space-y-4">
+                            <!-- UPI ID -->
+                            <div>
+                                <p class="text-sm text-gray-500 font-bold uppercase tracking-wider mb-2">UPI ID</p>
+                                <div class="flex items-center gap-3">
+                                    <code class="bg-white px-4 py-3 rounded-lg border border-palette-ochre/30 text-palette-forest font-bold text-lg shadow-sm flex-grow" id="upi-id">sunithasunny@okhdfcbank</code>
+                                    <button onclick="copyToClipboard('upi-id', 'copy-message-upi')" class="text-palette-rust hover:text-white transition p-3 bg-white rounded-lg border border-palette-ochre/30 hover:bg-palette-rust hover:border-palette-rust shadow-sm group flex-shrink-0" title="Copy UPI ID">
+                                        <i class="ph ph-copy text-xl group-hover:scale-110 transition-transform"></i>
+                                    </button>
+                                </div>
+                                <div id="copy-message-upi" class="text-palette-olive text-sm font-bold mt-2 h-5 opacity-0 transition-opacity duration-300">
+                                    <i class="ph-fill ph-check-circle inline-block mr-1"></i> Copied UPI ID!
+                                </div>
+                            </div>
+
+                            <!-- GPay Number -->
+                            <div>
+                                <p class="text-sm text-gray-500 font-bold uppercase tracking-wider mb-2">GPay Number</p>
+                                <div class="flex items-center gap-3">
+                                    <a href="upi://pay?pa=sunithasunny@okhdfcbank&pn=Sunitha%20Prasad" class="bg-white px-4 py-3 rounded-lg border border-palette-ochre/30 text-palette-forest font-bold text-lg shadow-sm flex-grow hover:border-palette-rust transition flex items-center justify-between group" title="Tap to open GPay / UPI App">
+                                        <span id="gpay-number" class="font-sans">+91 9916145716</span>
+                                        <span class="text-sm text-gray-400 group-hover:text-palette-rust font-sans font-bold flex items-center gap-1 transition-colors"><i class="ph ph-arrow-square-out text-lg"></i> <span class="hidden sm:inline">Pay App</span></span>
+                                    </a>
+                                    <button onclick="copyToClipboard('gpay-number', 'copy-message-gpay')" class="text-palette-rust hover:text-white transition p-3 bg-white rounded-lg border border-palette-ochre/30 hover:bg-palette-rust hover:border-palette-rust shadow-sm group flex-shrink-0" title="Copy GPay Number">
+                                        <i class="ph ph-copy text-xl group-hover:scale-110 transition-transform"></i>
+                                    </button>
+                                </div>
+                                <div id="copy-message-gpay" class="text-palette-olive text-sm font-bold mt-2 h-5 opacity-0 transition-opacity duration-300">
+                                    <i class="ph-fill ph-check-circle inline-block mr-1"></i> Copied GPay Number!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side: QR Code -->
+                    <div class="p-8 md:p-10 bg-palette-forest flex flex-col items-center justify-center text-center relative overflow-hidden">
+                        <div class="absolute inset-0 z-0 opacity-20">
+                            <div class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-palette-olive blur-3xl"></div>
+                            <div class="absolute -bottom-24 -left-24 w-64 h-64 rounded-full bg-palette-ochre blur-3xl"></div>
+                        </div>
+                        <div class="bg-white p-4 rounded-2xl shadow-xl mb-6 relative z-10 border-4 border-palette-cream/20">
+                            <img src="WhatsApp Image 2026-06-24 at 11.44.31 PM.jpeg" alt="Google Pay QR Code for Sunitha Prasad" class="w-48 h-48 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x400/FFFFFF/283618?text=QR+Code';">
+                        </div>
+                        <div class="relative z-10 flex items-center justify-center gap-2 mb-1">
+                            <i class="ph-fill ph-scan text-palette-ochre text-xl"></i>
+                            <p class="text-palette-cream font-medium tracking-wide text-lg">Scan to pay with any UPI app</p>
+                        </div>
+                        <p class="text-palette-cream/60 text-sm font-medium relative z-10">Sunitha Prasad</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-palette-olive text-palette-cream text-center relative overflow-hidden">
+        <!-- Abstract forest background image overlay -->
+        <div class="absolute inset-0 z-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Background forest pattern" class="w-full h-full object-cover grayscale mix-blend-multiply">
+        </div>
+        
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="text-3xl md:text-4xl font-serif mb-6 font-semibold"><i class="ph ph-paper-plane-tilt inline-block mr-2"></i> Ready to begin?</h2>
+            <p class="text-lg text-palette-cream/90 mb-8 leading-relaxed font-medium bg-palette-forest/30 p-6 rounded-2xl backdrop-blur-sm border border-palette-cream/10">
+                Before your first session, please complete the enrolment form and return it at least <strong class="text-white">2 days before the appointment</strong>. This helps us understand your background, concerns, and goals so we can make the best use of our time together.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+                <a href="https://forms.gle/iBnbWTpd5LAuLDoM7" target="_blank" rel="noopener noreferrer" class="bg-palette-rust text-white px-8 py-4 rounded-lg hover:bg-[#a65d1f] transition text-lg font-bold shadow-lg flex items-center justify-center gap-2 border border-transparent">
+                    <i class="ph ph-file-text text-xl"></i>
+                    Open Enrolment Form
+                </a>
+            </div>
+            
+            <p class="text-xl font-serif italic mb-10 text-white flex items-center justify-center gap-2">
+                <i class="ph-fill ph-quotes text-palette-ochre"></i>
+                We look forward to walking with you on this journey...
+                <i class="ph-fill ph-quotes text-palette-ochre rotate-180"></i>
+            </p>
+            
+            <!-- Contact Card -->
+            <div class="bg-palette-cream p-8 md:p-10 rounded-2xl shadow-2xl max-w-2xl mx-auto text-center border-t-8 border-palette-forest relative mt-16">
+                
+                <!-- Avatar Placeholder -->
+                <div class="absolute -top-16 left-1/2 transform -translate-x-1/2">
+                    <div class="w-32 h-32 rounded-full border-4 border-palette-cream bg-white shadow-xl overflow-hidden flex items-center justify-center">
+                         <img src="https://placehold.co/400x400/283618/FEFAE0?text=SP" alt="Sunitha Prasad Profile" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <div class="pt-12">
+                    <h4 class="text-3xl md:text-4xl font-serif font-bold mb-2 text-palette-forest tracking-wide uppercase">Sunitha Prasad</h4>
+                    <p class="text-palette-rust text-lg mb-8 font-bold tracking-wider">Marriage & Family Life Educator</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left text-gray-800">
+                        <a href="tel:+917204061580" class="flex items-center gap-4 hover:border-palette-rust transition group bg-white p-4 rounded-xl border border-palette-ochre/30 shadow-sm">
+                            <div class="bg-palette-olive/10 p-3 rounded-lg text-palette-olive group-hover:scale-110 group-hover:bg-palette-olive group-hover:text-white transition-all">
+                                <i class="ph ph-whatsapp-logo text-2xl"></i>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-sm text-gray-500 font-bold uppercase tracking-wider">WhatsApp</span>
+                                <span class="text-lg font-bold text-palette-forest truncate">+91 72040 61580</span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:sunithasunny@gmail.com" class="flex items-center gap-4 hover:border-palette-rust transition group bg-white p-4 rounded-xl border border-palette-ochre/30 shadow-sm">
+                            <div class="bg-palette-olive/10 p-3 rounded-lg text-palette-olive group-hover:scale-110 group-hover:bg-palette-olive group-hover:text-white transition-all">
+                                <i class="ph ph-envelope-simple text-2xl"></i>
+                            </div>
+                            <div class="flex flex-col overflow-hidden">
+                                <span class="text-sm text-gray-500 font-bold uppercase tracking-wider">Email</span>
+                                <span class="text-lg font-bold text-palette-forest truncate">sunithasunny@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://enrichministries.in" target="_blank" class="flex items-center gap-4 hover:border-palette-rust transition group bg-white p-4 rounded-xl border border-palette-ochre/30 shadow-sm">
+                            <div class="bg-palette-olive/10 p-3 rounded-lg text-palette-olive group-hover:scale-110 group-hover:bg-palette-olive group-hover:text-white transition-all">
+                                <i class="ph ph-globe text-2xl"></i>
+                            </div>
+                            <div class="flex flex-col overflow-hidden">
+                                <span class="text-sm text-gray-500 font-bold uppercase tracking-wider">Website</span>
+                                <span class="text-lg font-bold text-palette-forest truncate">enrichministries.in</span>
+                            </div>
+                        </a>
+
+                        <a href="https://enrichministries.github.io/Sunitha-Bio/" target="_blank" class="flex items-center gap-4 hover:border-palette-rust transition group bg-white p-4 rounded-xl border border-palette-ochre/30 shadow-sm">
+                            <div class="bg-palette-olive/10 p-3 rounded-lg text-palette-olive group-hover:scale-110 group-hover:bg-palette-olive group-hover:text-white transition-all">
+                                <i class="ph ph-link text-2xl"></i>
+                            </div>
+                            <div class="flex flex-col overflow-hidden">
+                                <span class="text-sm text-gray-500 font-bold uppercase tracking-wider">About Me</span>
+                                <span class="text-base font-bold text-palette-forest truncate">Read Biography</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-palette-forest text-palette-cream/80 py-8 text-center text-sm mt-auto border-t-4 border-palette-rust">
+        <p>&copy; 2026 Enrich Family Life. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function copyToClipboard(elementId, messageId) {
+            const textToCopy = document.getElementById(elementId).innerText;
+            
+            // Fallback for iFrame restrictions as per guidelines
+            const textArea = document.createElement("textarea");
+            textArea.value = textToCopy;
+            
+            // Move textarea out of viewport so it's not visible
+            textArea.style.position = "absolute";
+            textArea.style.left = "-999999px";
+            
+            document.body.prepend(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand("copy");
+                const msg = document.getElementById(messageId);
+                msg.classList.remove('opacity-0');
+                
+                setTimeout(() => {
+                    msg.classList.add('opacity-0');
+                }, 2000);
+            } catch (err) {
+                console.error('Failed to copy text: ', err);
+            } finally {
+                textArea.remove();
+            }
+        }
+    </script>
+</body>
+</html>
